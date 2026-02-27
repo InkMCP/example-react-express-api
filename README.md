@@ -1,25 +1,41 @@
 # React + Express API
 
-Learn how to deploy a React frontend with an Express backend using Ink MCP.
+A simple React frontend + Express backend monorepo, ready to deploy.
+
+## Setup
+
+```bash
+# Install dependencies
+cd server && npm install && cd ..
+cd client && npm install && cd ..
+npm install
+
+# Run both server and client
+npm run dev
+```
+
+The client runs on [http://localhost:5173](http://localhost:5173) and the API on port 3001.
+
+For production, build the client and run the server:
+
+```bash
+npm run build
+npm start
+```
+
+## Deploy with Ink
+
+Connect the [Ink MCP server](https://docs.ml.ink/quick-start) to your AI agent and prompt:
+
+> Deploy this app with Ink.
 
 ## Tutorial
 
-Full step-by-step tutorial: [docs.ml.ink/examples/full-stack/react-express-api](https://docs.ml.ink/examples/full-stack/react-express-api)
-
-### Prerequisites
-
-- An [Ink](https://ml.ink) account
-- Ink MCP connected to your AI agent ([setup guide](https://docs.ml.ink/quick-start))
-
-### Quick Deploy
-
-1. Connect Ink MCP to your agent
-2. Prompt: "Build a task management app with a React frontend and Express.js backend API. The frontend should call the API for all data operations."
-3. Prompt: "Deploy with Ink"
+Full tutorial: [docs.ml.ink/examples/full-stack/react-express-api](https://docs.ml.ink/examples/full-stack/react-express-api)
 
 ## About Ink
 
-[Ink](https://ml.ink) is a deployment platform built for AI agents. Connect the Ink MCP server to any AI coding agent and deploy applications, manage domains, databases, and infrastructure — all through natural language prompts.
+[Ink](https://ml.ink) is a deployment platform built for AI agents.
 
 - **Website**: [ml.ink](https://ml.ink)
 - **Documentation**: [docs.ml.ink](https://docs.ml.ink)
